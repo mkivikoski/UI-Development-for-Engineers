@@ -1,0 +1,59 @@
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.box-size{
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+body{
+  background: #f9f9f9;
+}
+
+.members-of-the-team{
+  margin: 0 auto;
+  width: 645px;
+}
+  .team-member{
+    background: #fff;
+    border: 1px solid #595858;
+    color: #3a3535;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    padding: 20px;
+    width: 200px;
+  }
+    .team-member:hover{
+      background: #dcd9d9;
+    }
+
+    .headshot{
+      display: block;
+      margin: 0 auto;
+
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      border-radius: 100%;
+    }
+
+    .name{
+      font-size: 20px;
+      font-family: Helvetica, Arial, sans-serif;
+      margin: 12px 0 6px;
+    }
+
+    .title{
+      font-size: 16px;
+      margin: 9px 0;
+      text-transform: uppercase;
+    }
+
+    .description{
+      font-size: 13px;
+      line-height: 1.5;
+    }
