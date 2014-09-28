@@ -1,0 +1,39 @@
+@import 'partials/reset';
+
+$base-unit: 16px;
+$line-height: $base-unit*1.5;
+
+section{
+	padding: $base-unit 0;
+}
+
+h1{
+	font-size: $base-unit*2;
+	line-height: $line-height*2;
+}
+
+h2{
+	font-size: $base-unit*1.8;
+	line-height: $line-height*1.8;
+}
+
+h3{
+	font-size: $base-unit*1.6;
+	line-height: $line-height*1.6;
+}
+
+h4{
+	font-size: $base-unit*1.4;
+	line-height: $line-height*1.4;
+}
+
+h5{
+	font-size: $base-unit*1.2;
+	line-height: $line-height*1.2;
+}
+
+p{
+	font-size: $base-unit;
+	line-height: $line-height;
+	margin-bottom: $base-unit/2;
+}

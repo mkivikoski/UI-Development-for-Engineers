@@ -1,0 +1,116 @@
+@import 'partials/reset';
+
+// Add percentage of white to a color
+@function tint($color, $percent){
+  @return mix(white, $color, $percent);
+}
+ 
+// Add percentage of black to a color
+@function shade($color, $percent){
+  @return mix(black, $color, $percent);
+}
+
+%box-size{
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box;    
+  box-sizing: border-box;         
+}
+
+%color-palette{
+	float: left;
+	height: 150px;
+	line-height: 150px;
+	text-align: center;
+	width: 25%;
+}
+
+$color-primary: #00de67; // Change me!
+$color-secondary: #f00; // Change me too! 
+
+.darken{
+	background: darken( $color-primary, 10% );
+	@extend %box-size;
+	@extend %color-palette;
+}
+
+.lighten{
+	background: lighten( $color-primary, 10% );
+	@extend %box-size;
+	@extend %color-palette;
+}
+
+.saturate{
+	background: saturate( $color-primary, 20% );	
+	@extend %box-size;
+	@extend %color-palette;
+}
+
+.desaturate{
+	background: desaturate( $color-primary, 20% );
+	@extend %box-size;
+	@extend %color-palette;
+}
+
+.adjust-hue{
+	background: adjust-hue( $color-primary, 20% );
+	@extend %box-size;
+	@extend %color-palette;
+}
+
+.rgba{
+	background: rgba( $color-primary, .7 );
+	@extend %box-size;
+	@extend %color-palette;
+}
+
+.tint{
+	background: tint( $color-primary, 10% );
+	@extend %box-size;
+	@extend %color-palette;
+}
+
+.shade{
+	background: shade( $color-primary, 10% );
+	@extend %box-size;
+	@extend %color-palette;
+}
+
+.complement{
+	background: complement( $color-primary );
+	@extend %box-size;
+	@extend %color-palette;
+}
+
+.grayscale{
+	background: grayscale( $color-primary );
+	@extend %box-size;
+	@extend %color-palette;
+}
+
+.mix{
+	background: mix( $color-primary, $color-secondary, 20%);
+	@extend %box-size;
+	@extend %color-palette;
+}
+
+.invert{
+	background: invert( $color-primary );
+	@extend %box-size;
+	@extend %color-palette;
+}
+
+.button{
+	background: rgba( $color-primary, 0.8);
+	border: 1px solid darken($color-primary, 20%);
+	color: #fff;
+	float: left;
+	text-shadow: 0 -1px 0 darken($color-primary, 10%);
+	padding: 20px;
+
+
+	&:hover{
+		background: rgba( $color-primary, 1);
+		color: lighten($color-primary, 10%);
+	}
+}
+

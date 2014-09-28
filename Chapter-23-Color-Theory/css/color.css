@@ -1,0 +1,95 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.darken, .lighten, .saturate, .desaturate, .adjust-hue, .rgba, .tint, .shade, .complement, .grayscale, .mix, .invert {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.darken, .lighten, .saturate, .desaturate, .adjust-hue, .rgba, .tint, .shade, .complement, .grayscale, .mix, .invert {
+  float: left;
+  height: 150px;
+  line-height: 150px;
+  text-align: center;
+  width: 25%; }
+
+.darken {
+  background: #00ab4f; }
+
+.lighten {
+  background: #12ff80; }
+
+.saturate {
+  background: #00de67; }
+
+.desaturate {
+  background: #16c869; }
+
+.adjust-hue {
+  background: #00deb1; }
+
+.rgba {
+  background: rgba(0, 222, 103, 0.7); }
+
+.tint {
+  background: #19e176; }
+
+.shade {
+  background: #00c75c; }
+
+.complement {
+  background: #de0077; }
+
+.grayscale {
+  background: #6f6f6f; }
+
+.mix {
+  background: #cc2c14; }
+
+.invert {
+  background: #ff2198; }
+
+.button {
+  background: rgba(0, 222, 103, 0.8);
+  border: 1px solid #007838;
+  color: #fff;
+  float: left;
+  text-shadow: 0 -1px 0 #00ab4f;
+  padding: 20px; }
+  .button:hover {
+    background: #00de67;
+    color: #12ff80; }
