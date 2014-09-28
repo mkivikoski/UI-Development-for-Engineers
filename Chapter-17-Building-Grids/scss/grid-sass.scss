@@ -1,0 +1,50 @@
+// Variables
+$columns: 24;
+$max-width: 960px;
+
+// Mixin
+@mixin box-size{
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+// Placeholders 
+%clearfix {
+  *zoom: 1;
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+%column-style{
+	@include box-size;
+	background: rgba(255,0,0, 0.3);
+	border: 1px solid rgba(255,255,255,0.4);
+	float: left;
+	height: 50px;
+	padding: 10px;
+}
+
+// Loops
+@for $i from 1 through $columns{
+	.column-#{$i}{
+		width: 100% / $columns * $i;
+		@extend %column-style;
+	}
+}
+
+.container{
+	@extend %clearfix;
+	@include box-size;
+	margin: 0 auto;
+	max-width: $max-width;
+	width: 100%;
+}
+
+
+

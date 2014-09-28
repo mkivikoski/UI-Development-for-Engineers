@@ -1,0 +1,40 @@
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.box-size{
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.container{
+	margin: 0 auto;
+	max-width: 960px;
+	width: 100%;
+}
+
+	.grid-item{
+		background: rgba(0,0,255,0.3);
+		border: 1px solid #f0f;
+		margin-bottom: 15px;
+		min-height: 40px;
+		padding: 0 15px;
+	}
+
+	.one-half{
+		float: left;
+		width: 50%;
+	}
+
+	.one-third{
+		float: left;
+		width: 33%
+	}
+
+	.two-thirds{
+		float: left;
+		width: 66%;
+	}
