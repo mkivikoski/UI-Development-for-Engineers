@@ -1,0 +1,57 @@
+/* Mixins */
+/* placeholders */
+.members-of-the-team {
+  *zoom: 1; }
+  .members-of-the-team:before, .members-of-the-team:after {
+    content: " ";
+    display: table; }
+  .members-of-the-team:after {
+    clear: both; }
+
+/* Variables */
+/* Layout */
+body {
+  background: #f9f9f9; }
+
+.members-of-the-team {
+  margin: 0 auto;
+  width: 645px; }
+
+.team-member {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+  background: #fff;
+  border: 1px solid #595858;
+  color: #3a3535;
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  padding: 20px;
+  width: 200px; }
+  .team-member:hover {
+    background: #dcd9d9; }
+
+.headshot {
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  display: block;
+  margin: 0 auto; }
+
+.name {
+  font-size: 20.02px;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 12px 0 6px; }
+
+.title {
+  font-size: 15.99px;
+  margin: 9px 0;
+  text-transform: uppercase; }
+
+.description {
+  font-size: 13px;
+  line-height: 1.5; }
