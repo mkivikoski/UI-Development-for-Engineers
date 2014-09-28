@@ -7,4 +7,42 @@
       Introduction to HAML
     %meta{ :name=>"description", :content=>""}
     %meta{ :name=>"viewport", :content=>"width=device-width, initial-scale=1"}
-    %link{:rel=>"stylesheet", :href=>"css/styles.css"}
+    %link{:rel=>"stylesheet", :href=>"css/style.css"}
+  %body
+    #wrapper.container.clearfix
+      %header
+        %h1Basic Elements of HTML that we&rsquo;ll be learning
+
+      %h1 Headline 1
+      %h2 Headline 2
+      %h3 Headline 3
+      %h4 Headline 4
+      %h5 Headline 5
+      %p
+        This wraps an entire paragraph of text. Such as this great hipster isum: Photo booth heirloom PBR&B, disrupt vinyl selvage Cosby sweater authentic blog lomo single-origin coffee Austin. Hoodie photo booth craft beer, bespoke wayfarers asymmetrical tousled 3 wolf moon aesthetic keytar Cosby sweater flannel lo-fi stumptown. Pour-over PBR sriracha, pug shabby chic brunch skateboard heirloom Brooklyn Carles. Odd Future tousled meggings gluten-free, seitan VHS meh tattooed vegan Tumblr blog bespoke. Brunch Shoreditch wayfarers, chillwave Bushwick craft beer fanny pack Blue Bottle roof party tote bag. Shoreditch PBR photo booth tattooed Cosby sweater, pug cliche American Apparel street art. Neutra 3 wolf moon stumptown pork belly, vinyl master cleanse lomo butcher.
+
+      %p
+        Paragraph test
+
+      %p 
+        Within a paragraph (or a div) we can find other elements, such as inline elements like <strong>strong</strong>, <em>em</em>, <b>bold</b>, <i>italic</i>, <a href="">anchors</a> and <span>spans</span>
+
+      %h3 Self closing elements
+
+      %h4 Horizontal Rule
+      %hr
+
+      %h4 Break
+      %br
+
+      %h4 Image
+      <!-- <img src="imgs/funny.jpg" alt="" title="" /> -->
+      %img{:src=>"imgs/funny.jpg", :alt=>"Poop jokes"}
+
+
+      <!-- <h3>Attributes</h3>
+      <p>IDs and classes are CSS hooks, HREF on anchors defines the location, SRC on images defines the source of the image, and ALT and TITLE are descriptions and information about the image</p>
+
+      <p>You can also create custom DATA attributes, for JS hooks. data-url, data-name, data-mustaches. They start with 'data-' and the secondary portion is meant as a descriptor for you to hook onto</p>
+
+      <p>Questions? Find me on twitter: <a href="http://www.twitter.com/mkivikoski">@mkivikoski</a></p> -->
