@@ -24,8 +24,16 @@
 	width: 25%;
 }
 
-$color-primary: #00de67; // Change me!
+$color-primary: #11751D; // Change me!
 $color-secondary: #f00; // Change me too! 
+
+.original{
+	background: $color-primary;
+	@extend %color-palette;
+	width: 100%;
+	@extend %box-size;
+
+}
 
 .darken{
 	background: darken( $color-primary, 10% );

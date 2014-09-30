@@ -1,0 +1,81 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.btn, .btn-primary, .btn-primary-large, .btn-primary-small, .btn-secondary, .btn-success, .btn-error {
+  font: 800 1em Arial, Helvetica, sans-serif;
+  float: left;
+  display: inline-block;
+  margin: 0 1%;
+  padding: 0.5em 1%;
+  text-transform: uppercase;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px; }
+
+.btn-primary-large, input[type="text"].large {
+  font-size: 1.2em;
+  padding: 0.8em 1.5%; }
+
+.btn-primary-small {
+  font-size: 0.8em;
+  padding: 0.2em 0.5%; }
+
+.btn-primary, .btn-primary-large, .btn-primary-small {
+  background: #A1D7D7;
+  color: #245555; }
+
+.btn-secondary {
+  background: #FBD158;
+  color: #b68804; }
+
+.btn-success {
+  background: #C1E0C0;
+  color: #376c35; }
+
+.btn-error {
+  background: #DF5842;
+  color: #742114; }
+
+input[type="text"] {
+  border: 1px solid #c5e6e6;
+  font-size: 1em;
+  padding: 0.5em 1%;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px; }

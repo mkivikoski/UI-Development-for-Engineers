@@ -1,0 +1,14 @@
+@import 'partials/reset';
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+$color-primary: #A1D7D7;
+$color-secondary: #FBD158;
+$color-tertiary: #EDEDEB;
+$color-success: #C1E0C0;
+$color-error: #DF5842;

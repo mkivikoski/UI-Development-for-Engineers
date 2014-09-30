@@ -1,0 +1,79 @@
+@import 'partials/reset';
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+$color-primary: #A1D7D7;
+$color-secondary: #FBD158;
+$color-tertiary: #EDEDEB;
+$color-success: #C1E0C0;
+$color-error: #DF5842;
+
+.btn{
+	font: 800 1em Arial, Helvetica, sans-serif; 
+	float: left;
+	display: inline-block;
+	margin: 0 1%;
+	padding: 0.5em 1%;
+	text-transform: uppercase;
+	@include border-radius(2px);
+}
+
+%lrg{
+	font-size: 1.2em;
+	padding: 0.8em 1.5%
+}
+
+%sm{
+	font-size: 0.8em;
+	padding: 0.2em 0.5%;
+}
+
+.btn-primary{
+	background: $color-primary;
+	color: darken($color-primary, 50%);
+	@extend .btn;
+}
+
+.btn-secondary{
+	background: $color-secondary;
+	color: darken($color-secondary, 30%);
+	@extend .btn;
+}
+
+.btn-success{
+	background: $color-success;
+	color: darken($color-success, 50%);
+	@extend .btn;
+}
+
+.btn-error{
+	background: $color-error;
+	color: darken($color-error, 30%);
+	@extend .btn;
+}
+
+.btn-primary-large{
+	@extend .btn-primary;
+	@extend %lrg;
+}
+
+.btn-primary-small{
+	@extend .btn-primary;
+	@extend %sm;
+}
+
+input[type="text"]{
+	border: 1px solid lighten($color-primary, 10%);
+	font-size: 1em;
+	padding: 0.5em 1%;
+	@include border-radius(2px);
+
+	&.large{
+		@extend %lrg;
+	}
+}
